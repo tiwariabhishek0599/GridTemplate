@@ -1,0 +1,118 @@
+*{
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+   
+}
+body{
+    background-color: rgb(236,242,248);
+
+}
+.container{
+    margin: auto;
+    background-color: rgb(236,242,248);
+    height: 90vh;
+    width: 80vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    row-gap: 25px;
+    column-gap: 25px;
+    padding-top: 2%;  
+}
+.item{
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    color: white;
+    padding: 12px 25px;
+    padding-right: 40px;
+    
+}
+#item1{
+    background-color: rgb(117,65,200);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+#item5{
+    background-color:rgb(25,33,46);
+    grid-column: 2 /4;
+}
+#item2{
+    background-color: rgb(72,85,106);
+
+}
+#item3{
+    background-color: rgb(255,255,255);
+    grid-row-start: span 2;
+    color: rgb(10, 5, 5);
+}
+    #item4{
+     color: black;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+        
+    }
+.position{
+    color: rgb(136, 149, 149);
+    font-weight: 500;
+    margin-left: 8%;
+    font-size: 12px;
+    margin-left: 30px;
+    
+}
+.name{
+    font-size: 12px;
+    font-weight: 550;
+    margin-top: 30px;
+}
+.intro{
+font-size: 1.3em;
+font-weight: bolder;
+f
+}
+.intro1{
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(136, 149, 149);
+}
+.profile{
+    height: 30px;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-top: 27px;
+    
+}
+#item1 .intro1{
+    color:  rgb(222, 200, 228);
+}
+/* .intro1{
+    font-size: 12px;
+} */
+.flex{
+    display: flex;
+        gap: var(--gap, 1rem);
+    }
+    #item1 .position{
+        color: rgb(222, 200, 228);
+    }
+    #item2 .position{
+        color: rgb(167, 167, 170); 
+    }
+    #item2 .intro1{
+  color: rgb(167, 167, 170); 
+    }
+    .position{
+        display: inline;
+        padding-bottom: 2%;
+        margin-bottom: 15%;
+        font-size: 10px;
+    }
+   
