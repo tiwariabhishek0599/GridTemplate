@@ -1,38 +1,41 @@
 *{
-    margin-left: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow Semi Condensed', sans-serif;
-   
+font-family: 'Borel', 
 }
 body{
     background-color: rgb(236,242,248);
 
 }
 .container{
-    margin: auto;
+    margin-inline: auto;
     background-color: rgb(236,242,248);
-    height: 90vh;
-    width: 80vw;
+    min-height: 50vh;
+    width: 85vw;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     row-gap: 25px;
     column-gap: 25px;
-    padding-top: 2%;  
+    padding-block: 1rem;
+  
+    
 }
 .item{
     background-color: rgb(255,255,255);
     border-radius: 10px;
     color: white;
-    padding: 12px 25px;
-    padding-right: 40px;
+    padding: 2rem;
     
 }
 #item1{
     background-color: rgb(117,65,200);
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:1 ;
     background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position: top right 10%;
@@ -51,68 +54,56 @@ body{
     grid-row-start: span 2;
     color: rgb(10, 5, 5);
 }
-    #item4{
-     color: black;
-    }
-    img {
-        max-width: 100%;
-        display: block;
-        
-    }
+#item4{
+    color: black;
+   }
+img {
+    max-width: 100%;
+    display: block;   
+   }
 .position{
     color: rgb(136, 149, 149);
+    font-size: 0.7rem;
     font-weight: 500;
-    margin-left: 8%;
-    font-size: 12px;
-    margin-left: 30px;
+    margin: 0;
     
 }
 .name{
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 550;
-    margin-top: 30px;
 }
 .intro{
-font-size: 1.3em;
-font-weight: bolder;
-f
+font-size: 1.2em;
+font-weight: lighter;
+padding-top: 0.8rem;
+
 }
 .intro1{
-    font-size: 14px;
-    font-weight: lighter;
-    color: rgb(136, 149, 149);
-}
-.profile{
-    height: 30px;
-    width: 30px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    margin-top: 27px;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    color: rgb(153, 161, 161);
+    width: 99%;
     
 }
-#item1 .intro1{
-    color:  rgb(222, 200, 228);
+.profile{
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
 }
-/* .intro1{
-    font-size: 12px;
-} */
+#item1 .intro1{
+    color: rgb(253, 248, 248);
+}
 .flex{
     display: flex;
-        gap: var(--gap, 1rem);
+    gap: 1rem;
+}
+.sub-flex{
+    display: flex;
+    flex-direction: column;
+}
+#item1 .position{
+    color: rgb(222, 200, 228);
     }
-    #item1 .position{
-        color: rgb(222, 200, 228);
-    }
-    #item2 .position{
-        color: rgb(167, 167, 170); 
-    }
-    #item2 .intro1{
-  color: rgb(167, 167, 170); 
-    }
-    .position{
-        display: inline;
-        padding-bottom: 2%;
-        margin-bottom: 15%;
-        font-size: 10px;
-    }
-   
+#item2 .position{
+    color:rgb(127, 145, 174);
+}
